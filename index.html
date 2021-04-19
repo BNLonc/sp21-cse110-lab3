@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<link rel="stylesheet" href="style.css">
+
 <html lang="en">
     <head>
         <meta name="author" content="Ben Lonc">
@@ -10,9 +13,14 @@
         <link rel="icon" type="image/png" href="musicNote.png">
     </head>
     <body>
+        <style> 
+            body {
+                background-color: #edfeff;
+            }
+        </style>
         <header>
-            <h1><span>Ben Lonc's</span> Journal Page</h1>
-            <h3><s>Geocities is totally back, guys!</s></h3>
+            <h1 type="name"><span>Ben Lonc's</span> Journal Page</h1>
+            <h3 id="badJoke"><s>Geocities is totally back, guys!</s></h3>
             <img src="profilePhoto.jpg" width="500" alt="A picture of me"> 
             <br>
             <details>
@@ -31,16 +39,16 @@
                 <br>
             </details>
             <br>
-            <details>
+            <details id="socials">
                 <summary>Social media</summary>
                 <nav> <!-- put social links here -->
-                    <a href="https://www.facebook.com/ben.lonc.549/">Facebook</a> |
-                    <a href="https://www.instagram.com/ben_lonc/">Instagram</a> |
-                    <a href="https://as.ucsd.edu/Home/CouncilProfile/201">Associated Students</a>
+                    <a id="Facebook" href="https://www.facebook.com/ben.lonc.549/">Facebook</a> |
+                    <a id="Insta" href="https://www.instagram.com/ben_lonc/">Instagram</a> |
+                    <a id="AS" href="https://as.ucsd.edu/Home/CouncilProfile/201">Associated Students</a>
                 </nav>
             </details>
         </header>
-        <main> <!-- main content of the visible page -->
+        <main style="font-family: Arial, Helvetica, sans-serif"> <!-- main content of the visible page -->
             <section>
                 <h2>Some fun facts:</h2>
                 <ul>
@@ -58,19 +66,19 @@
             <hr> <!--division between bio and journal-->
 
             <div> <!-- entry container-->
-                <section> <!-- each entry -->
+                <section class="entry"> <!-- each entry -->
                     <h3>Monday, 5 April 2021</h3>
                     <p>
                         On Monday, I had two lectures to watch and one review quiz to do for class. I also caught wind of some in-person rec classes coming back on campus, which had me pretty excited. I signed up for kendo right away hoping to see some of my old friends from before everything went virtual. 
                     </p>
                 </section>
-                <section>
+                <section class="entry">
                     <h3>Tuesday, 6 April 2021</h3>
                     <p>
                         On Tuesday, I had to miss some synchronous lectures because I had a COVID vaccine appointment at 3:30. The shot itself almost felt like nothing. My dad had told me that it had put him out of commission for five days, but all I felt was a sore left deltoid for a while. 
                     </p>
                 </section>
-                <section>
+                <section class="entry">
                     <h3>Wednesday, 7 April 2021</h3>
                     <p>
                         On Wednesday, I had a few meetings for AS. We'd just appointed a new FC, who'd be taking the job of running Finance Committee off my hands for the rest of the term. I had a lecture I had to catch up on from Tuesday, but I'd fit that in before crashing at a nice, early 2 AM.

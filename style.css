@@ -1,0 +1,82 @@
+/*stylesheet for my page*/
+
+header {
+    margin: 10px
+
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+img {
+    width: 30%;
+    max-width: 1000px;
+}
+
+h3 {
+    padding-top: 5%;
+}
+
+p, li {
+    display: block;
+}
+
+p:hover {
+    background-color:  #99f9ff;
+}
+
+:active {
+    font-family: "ZenDots-Regular";
+    src: url("./ZenDots-Regular.ttf");
+}
+
+footer {
+    position: relative;
+}
+
+#badJoke {
+    display: none;
+    position: relative;
+}
+
+@font-face {
+    font-family: "ZenDots-Regular";
+    src: url("./ZenDots-Regular.ttf");
+}
+
+[type="name"] {
+    font-family: "ZenDots-Regular";
+}
+
+.entry > h3 {
+    padding: 1%;
+    text-align: left;
+    color: #333333;
+    text-decoration: blanchedalmond;
+}
+
+#socials {
+    grid-template-columns: 30% 30% 30% auto;
+}
+
+#AS #Facebook #Insta {
+    grid-column-start: auto;
+}
+
+.entry {
+    margin: auto;
+
+    display: flex;
+
+    border-style: dashed;
+    border-color: aquamarine;
+    border-width: 1px;
+    border-radius: 1px;
+}
+
+@media (width: 200px) {
+    img {
+        display: none;
+    }
+}
